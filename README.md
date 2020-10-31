@@ -10,3 +10,5 @@ Use: ./zphisher.sh
 <a> se continuar da um</a>
 
 <a> apt-get update </a>
+
+<a>Testado no Kali Linux e no UserLand</a>
