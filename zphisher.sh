@@ -8,7 +8,7 @@ command -v unzip > /dev/null 2>&1 || { echo >&2 "Unzip is not installed ! Instal
 banner() {
 clear
 printf " \e[33;1m  
- ______		  ______                       _______                  
+ ______		 ______                       _______                  
 |      |	|      |       \       /     |       |         \      /
 |      |	|      |        \     /      |       |          \    / 
 |______|        |______|         \   /       |       |           \  /  
@@ -17,9 +17,9 @@ printf " \e[33;1m
 |  \            |      |           |         |       |           /  \  
 |   \           |      |           |         |       |          /    \ 
 |    \          |      |           |         |_______|         /      \ \e[0m\n"
-printf " \e[33;1m      |_|           \e[1;97m    Version 1.0      \e[0m\n"
+printf " \e[33;1m      |_|           \e[1;97m    Version 1.1      \e[0m\n"
 printf " \n"
-printf " \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Ferramenta criada por HeroRicky_Games (http://www.youtube.com/herorickygames)
+printf " \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Ferramenta criada por HeroRicky_Games (https://www.youtube.com/herorickygames)
 Baseada na Zphisher \e[0m\n"
 printf "
 
