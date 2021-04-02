@@ -184,7 +184,8 @@ fi
 fi
 fi
 printf "\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Iniciando Ngrok ..\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Iniciando pagekite.py, aqui pedirá o seu login no site!\e[0m\n"
+printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Então acesse o site https://pagekite.net para fazer sua conta!\e[0m\n"
 cd websites/$server && php -S 127.0.0.1:80 > /dev/null 2>&1 &
 sleep 2
 python3 pagekite.py --signup
