@@ -272,7 +272,7 @@ download_cloudflared() {
 ## Install ngrok
 install_ngrok() {
 	if [[ -e ".server/ngrok" ]]; then
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Ngrok já instalado."
+		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Ngrok já instalados."
 	else
 		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Instalando Ngrok..."${WHITE}
 		arch=`uname -m`
